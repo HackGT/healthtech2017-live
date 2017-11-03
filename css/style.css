@@ -2,10 +2,14 @@
     font-family: Bebas;
     src: url("../assets/fonts/BebasKai-Regular.otf") format("opentype");
 }
-
+@font-face {
+    font-family: Orkney;
+    src: url("../assets/fonts/OrkneyRegular.otf") format("opentype");
+}
 body {
     color: #5F707A;
     background-color: #99D8F7;
+    font-family: "Orkney", Arial, sans-serif;
 }
 
 h1, h2, h3,  .navbar-brand {
