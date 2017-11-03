@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="40px" viewBox="0 0 64 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cloud" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M53.491,39.855 L13.95,39.855 C5.95,39.855 0.78,35.121 0.78,27.794 C0.78,20.201 6.957,14.024 14.55,14.024 C15.504,14.024 16.454,14.124 17.389,14.322 C19.864,6.018 27.627,0.143 36.419,0.143 C47.368,0.143 56.276,9.049 56.276,19.997 C56.276,20.265 56.27,20.535 56.258,20.807 C60.311,22.014 63.219,25.799 63.219,30.126 C63.22,35.491 58.855,39.855 53.491,39.855 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

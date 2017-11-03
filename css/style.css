@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Bebas;
+    src: url("../assets/fonts/BebasKai-Regular.otf") format("opentype");
+}
+
+body {
+    color: #5F707A;
+    background-color: #99D8F7;
+}
+
+h1, h2, h3,  .navbar-brand {
+    font-family: "Bebas", Arial, sans-serif;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-purple {
+    background-color: white;
+    color: #5F707A;;
+}
+
+.navbar-purple a {
+    color: #5F707A;
+}
+
+.navbar-purple a:hover {
+    color: black;
+}
+
+.navbar-purple a:focus {
+    color: black;
+}
+
+.twitter-feed {
+    max-height: 70vh;
+    overflow: scroll;
+}
+
+.welcome {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    text-align: center;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+    line-height: 2em;
+}
+
+tr.day {
+    background-color: #ccc;
+    width: 100%;
+    font-weight: bold;
+    border-left: solid #444 4px;
+}
+
+tr.day > td {
+    padding-left: 4px;
+}
+
+tbody tr:nth-child(odd):not(.day) {
+    background-color: #ddd;
+}
+
+td {
+    padding: 0.25em;
+}
+
+#schedule .panel-body {
+    overflow-x: scroll;
+}
+
+ul.navbar-nav {
+    margin: initial;
+}
+
+h3.panel-title {
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 2em;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.alley {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: -5;
+}
+@media screen and (max-width: 992px) {
+    .alley {
+        display: none;
+    }
+}
+
+.alley-left {
+    left: 0;
+    top: 0;
+}
+
+.alley-right {
+    right: 0;
+    top: 0;
+}
+
+.panel-primary > .panel-heading, .panel-warning > .panel-heading {
+    color: white;
+    background-color: #5F707A;
+    border-color: #5F707A;
+}
+
+
+
+.btn-primary {
+    background-color: #2D1A38;
+    border-color: #2D1A38;
+}
+
+input.form-control:focus {
+    border-color: #2D1A38;
+}
+
+.navbar-header:hover a, .navbar-header:focus a, .navbar-header:active a, .navbar-header a:focus, .navbar-header a:hover, .navbar-header a:active {
+    color: #5F707A;
+}
+
+.map {
+    width: 80%;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-primary:hover {
+    border-color: #E53093;
+    background-color: #E53093;
+}
+
+
+
+.more-clouds-before, .more-clouds-after {
+    content: "";
+    position: absolute;
+    background: url("../assets/cloud.svg");
+    width: 100%;
+    height: 66px;
+    left: 0;
+    background-size: 105px 70px;
+    animation-name: move-clouds;
+    animation-duration: 123s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -2;
+}
+
+.cloudy::before, .cloudy::after {
+    content: "";
+    position: absolute;
+    background: url("../assets/cloud.svg");
+    width: 100%;
+    height: 50px;
+    left: 0;
+    /*bottom: 100%;*/
+    background-size: 80px 60px;
+    animation-name: move-clouds;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -2;
+}
+.cloudy::after, .more-clouds-after {
+    transform: rotate(180deg);
+    top: 100%;
+}
+
+.cloudy {
+    margin-bottom: 75px;
+}
+
+@keyframes move-clouds {
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: 100vw;
+    }
+}
+
+#cloud-buffer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+}
+
+.panel-body::before {
+    display: none;
+    content:"";
+}
